@@ -8,8 +8,9 @@ header{
   height:100vh;
   background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('../images/avg.jpg');
   background-repeat: no-repeat;
-  background-size:auto;
-  background-attachment:fixed;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
 }
 
 nav{
