@@ -1,0 +1,132 @@
+*{
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+  width:100%;
+  height:100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('../images/avg.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+nav{
+  width: 100%;
+  height:5vh;
+  background: rgba(0,0,0,0.1);
+  color: white;
+  justify-content: space-between;
+  display: flex;
+}
+
+
+nav .menu{
+  width:25%;
+  justify-content: space-around;
+  display:flex;
+
+}
+
+nav .menu a:first-child{
+  color: #00b894;
+}
+
+nav .menu a{
+  width: 20%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+main{
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+section{
+
+}
+
+section h3{
+  font-size:35px;
+  font-weight: 300 bold;
+  letter-spacing: 3px;
+  color: yellow;
+  text-shadow: 3px 3px 5px black;
+}
+
+section h1{
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700px bold;
+  text-shadow: 4px 3px 6px black;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: blue;
+}
+
+section p{
+  font-size: 25px;
+  color: #eee;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 3px black;
+  color: red;
+}
+
+section a{
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight:500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all .5s ease;
+}
+
+section .btnone{
+  background: #fff;
+  color: #000;
+}
+.btnone:hover{
+  background: #00b894;
+  color: white;
+}
+section .btntwo{
+  background: #00b894;
+  color: white;
+}
+.btntwo:hover{
+  background: #fff;
+  color: #000;
+}
+section .btnthree{
+  background: white;
+  color: blue;
+  font-size: 15px;
+  font-weight:bold;
+
+}
+.btnthree:hover{
+  background: #000;
+  color: #fff;
+}
+.change_content:after{
+  content:'';
+  animation: changetext 10s infinite linear;
+  color:#00b894;
+}
+
+@keyframes changetext{
+  0%{content: ":Age Of Ultron";}
+  20%{content: ":Infinity War";}
+  35%{content: ":End Game";}
+}
